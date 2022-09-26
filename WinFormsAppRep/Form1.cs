@@ -5,6 +5,7 @@ namespace WinFormsAppRep
         public Form1()
         {
             InitializeComponent();
+            lineReplace.Text = Properties.Settings.Default.text.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -14,7 +15,12 @@ namespace WinFormsAppRep
 
         private void lineReplace_TextChanged(object sender, EventArgs e)
         {
-            
+            string text = this.lineReplace.Text;
+
+            Properties.Settings.Default.text = text;
+            Properties.Settings.Default.Save();
+
+            MessageBox.Show(Logic.Swap(text));
         }
         public class Logic
         {

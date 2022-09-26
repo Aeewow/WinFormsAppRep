@@ -16,5 +16,14 @@ namespace WinFormsAppRep
         {
             
         }
+        public class Logic
+        {
+            public static string Swap(string text)
+            {
+                string textReplace = text;
+                textReplace = textReplace.Replace('ì', 'ñ').Replace('ó', 'ë').Replace('õ', 'î').Replace('à', 'í');
+                return textReplace;
+            }
+        }
     }
 }

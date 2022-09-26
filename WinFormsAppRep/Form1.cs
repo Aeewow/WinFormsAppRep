@@ -10,17 +10,17 @@ namespace WinFormsAppRep
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void lineReplace_TextChanged(object sender, EventArgs e)
-        {
             string text = this.lineReplace.Text;
 
             Properties.Settings.Default.text = text;
             Properties.Settings.Default.Save();
 
             MessageBox.Show(Logic.Swap(text));
+        }
+
+        private void lineReplace_TextChanged(object sender, EventArgs e)
+        {
+            
         }
         public class Logic
         {

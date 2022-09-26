@@ -58,6 +58,7 @@
             this.lineReplace.Name = "lineReplace";
             this.lineReplace.Size = new System.Drawing.Size(352, 31);
             this.lineReplace.TabIndex = 2;
+            this.lineReplace.TextChanged += new System.EventHandler(this.lineReplace_TextChanged);
             // 
             // Form1
             // 

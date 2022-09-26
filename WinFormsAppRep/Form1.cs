@@ -11,5 +11,10 @@ namespace WinFormsAppRep
         {
 
         }
+
+        private void lineReplace_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
